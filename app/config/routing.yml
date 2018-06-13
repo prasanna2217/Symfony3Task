@@ -1,0 +1,10 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    
+article_by_title:
+  url:    articles/:subject/:year/:title.html
+  param:  { module: books1, action: permalink }    
